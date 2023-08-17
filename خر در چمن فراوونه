@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  int a, b, l;
+  int c=0;
+  cin>>a>>b>>l;
+  if(l%2==1)
+  {
+     c+= a*((l/2)+1)+ b*(l/2);
+  }
+  if(l%2==0)
+  {
+      c+= a*(l/2)+ b*(l/2);
+  }
+  cout<<c;
+}
