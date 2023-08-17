@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a, b, c;
+   int d=0;
+   cin>>a>>b>>c;
+   if(a>=1 && a<=178 && b>=1 && b<=178 && c>=1 && c<=178)
+   {
+   if(a+b+c==180)
+   {
+       cout<<"Yes";
+   }
+   }
+   if(a+b+c!=180 || a==0 || a==179 || b==0 || b==179 || c==0 || c==179)
+   {
+       cout<<"No";
+   }
+}
