@@ -1,0 +1,31 @@
+#include <iostream>
+#include <vector>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	long long int n;
+	int a = 0, b = 1;
+	cin >> n;
+	for (int i = 0; i <= 29; i++)
+	{
+		if (n == pow(2, a))
+		{
+			cout << a;
+			break;
+		}
+		if (n == pow(2, b))
+		{
+			cout << b;
+			break;
+		}
+		if (n > pow(2, a) && n < pow(2, b))
+		{
+			cout << a;
+			break;
+		}
+		a++;
+		b++;
+	}
+}
