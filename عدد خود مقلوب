@@ -1,0 +1,43 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+void symmetrical(string a)
+{
+    int ashkan=0;
+    int ashkan2=0;
+    string b;
+    for(long long int c=a.size();c>=0;c--)
+    {
+        b+=a[c-1];
+    }
+    if(a[0]=='0')
+    {
+        cout<<"false number";
+        ashkan2++;
+    }
+    for(long long int d=a.size();d>=1;d--)
+    {
+        if(a[d-1]==b[d-1])
+        {
+           ashkan+=0;
+        }
+        else
+        {
+            ashkan++;
+        }
+    }
+    if(ashkan==0 && ashkan2==0)
+    {
+        cout<<"YES"<<endl;
+    }
+    if(ashkan!=0 && ashkan2==0)
+    {
+        cout<<"NO"<<endl;
+    }
+}
+ int main()
+{
+  string my_a;
+  cin>>my_a;
+  symmetrical(my_a);
+}
