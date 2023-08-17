@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    if(a>=-273 && a<=6000)
+    {
+        if(a<0)
+        {
+            cout<<"Ice";
+        }
+        if(a>=0 && a<=100)
+        {
+            cout<<"Water";
+        }
+        if(a>100)
+        {
+            cout<<"Steam";
+        }
+    }
+    else
+    {
+        cout<<"false number";
+    }
+}
