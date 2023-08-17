@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+#include <stack>
+using namespace std;
+int main()
+{
+  std::stack<int> newstack;
+  int my_a=0;
+  int a;
+  while(my_a==0)
+  {
+      cin>>a;
+      if(a==0)
+      {
+          my_a+=1;
+      }
+      else
+      {
+          newstack.push(a);
+      }
+  }
+  while(!newstack.empty())
+  {
+      cout<<newstack.top()<<"\n";
+      newstack.pop();
+  }
+}
