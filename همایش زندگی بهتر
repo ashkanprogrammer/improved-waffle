@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int r, c;
+   cin>>r>>c;
+   if(c>=1 && c<=10)
+   {
+       cout<<"Right ";
+       cout<<10-(r-1)<<" ";
+       cout<<10-(10-c);
+   }
+   if(c>=11 && c<=20)
+   {
+       cout<<"Left ";
+       cout<<10-(r-1)<<" ";
+       cout<<20-(c-1);
+   }
+}
