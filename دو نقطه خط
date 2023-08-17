@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int x1,y1,x2,y2;
+   int a=0;
+   cin>>x1>>y1>>x2>>y2;
+   if(x1==x2)
+   {
+       cout<<"Vertical";
+       a+=1;
+   }
+   if(y1==y2)
+   {
+       cout<<"Horizontal";
+       a+=1;
+   }
+   if(a==0)
+   {
+       cout<<"Try again";
+   }
+}
