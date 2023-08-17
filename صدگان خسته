@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+  int a, b;
+  int a2, b2;
+  int ashkan1=0, ashkan2=0, ashkan3=0, ashkan_x=0;
+  int ashkan4=0, ashkan5=0, ashkan6=0, ashkan_y=0;
+  cin>>a>>b;
+  a2=a;
+  b2=b;
+  ashkan1=a-((a2/10)*10);
+  ashkan2=(a2/10)%10;
+  ashkan3=a2/100;
+  ashkan4=b-((b2/10)*10);
+  ashkan5=(b2/10)%10;
+  ashkan6=b2/100;
+
+  ashkan_x=(ashkan1*100)+(ashkan2*10)+(ashkan3);
+  ashkan_y=(ashkan4*100)+(ashkan5*10)+(ashkan6);
+
+  if(ashkan_y < ashkan_x)
+  {
+     cout<<b<<" < "<<a;
+  }
+  if(ashkan_x < ashkan_y)
+  {
+     cout<<a<<" < "<<b;
+  }
+  if(ashkan_y == ashkan_x)
+  {
+     cout<<a<<" = "<<b;
+  }
+}
