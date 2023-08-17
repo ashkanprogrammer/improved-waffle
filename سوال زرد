@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a;
+   int b=0;
+   cin>>a;
+   if(a>=1 && a<=10)
+   {
+       cout<<"W";
+       while(b<a)
+       {
+           cout<<"o";
+           b++;
+       }
+      cout<<"w!";
+   }
+   else
+   {
+       cout<<"false number";
+   }
+}
