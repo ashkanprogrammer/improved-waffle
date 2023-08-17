@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int shah, vazir, rokh, fil, asb, sarbaz;
+   cin>>shah>>vazir>>rokh>>fil>>asb>>sarbaz;
+   if(shah>1)
+   {
+       cout<<"-"<<shah-1;
+       cout<<" ";
+   }
+   if(shah<=1)
+   {
+       cout<<1-shah;
+       cout<<" ";
+   }
+   if(vazir>1)
+   {
+       cout<<"-"<<vazir-1;
+       cout<<" ";
+   }
+   if(vazir<=1)
+   {
+       cout<<1-vazir;
+       cout<<" ";
+   }
+   if(rokh>2)
+   {
+       cout<<"-"<<rokh-2;
+       cout<<" ";
+   }
+   if(rokh<=2)
+   {
+       cout<<2-rokh;
+       cout<<" ";
+   }
+   if(fil>2)
+   {
+       cout<<"-"<<fil-2;
+       cout<<" ";
+   }
+   if(fil<=2)
+   {
+       cout<<2-fil;
+       cout<<" ";
+   }
+   if(asb>2)
+   {
+       cout<<"-"<<asb-2;
+       cout<<" ";
+   }
+   if(asb<=2)
+   {
+       cout<<2-asb;
+       cout<<" ";
+   }
+   if(sarbaz>8)
+   {
+       cout<<"-"<<sarbaz-8;
+       cout<<" ";
+   }
+   if(sarbaz<=8)
+   {
+       cout<<8-sarbaz;
+       cout<<" ";
+   }
+}
